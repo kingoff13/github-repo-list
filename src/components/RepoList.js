@@ -23,7 +23,7 @@ export default class RepoList extends Component {
                 {this.props.repos.map((row) => (
                     <TableRow key={row.name}>
                     <TableCell component="th" scope="row">
-                        {row.name}
+                        <a href={row.html_url} target="_blanc">{row.name}</a>
                     </TableCell>
                     <TableCell align="right">{row.stargazers_count}</TableCell>
                     </TableRow>

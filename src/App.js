@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import PersonalCard from './components/PersonalCard';
 import RepoList from './components/RepoList';
-import { Input, Button, Grid, Box } from '@material-ui/core';
+import { Input, Button, Box } from '@material-ui/core';
 
 class App extends Component
 {
@@ -140,7 +140,7 @@ class App extends Component
           <Button variant="contained" color="primary" onClick={this.prevPage}>
             Prev
           </Button>
-          page {this.state.pagination.page} from {this.state.pagination.pages_of}
+          page {this.state.pagination.page+1} from {this.state.pagination.pages_of+1}
           <Button variant="contained" color="primary" onClick={this.nextPage}>
             Next
           </Button>

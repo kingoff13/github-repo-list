@@ -124,14 +124,13 @@ class App extends Component
   render() {
     return (
       <div className="App">
-        <Grid>
-          <Box>
+          <Box m={1}>
             <Input onChange={this.changeUsername} />
           </Box>
-          <Box>
-          <Button variant="contained" color="primary" onClick={this.getInfo}>
-            Search
-          </Button>
+          <Box m={1}>
+            <Button variant="contained" color="primary" onClick={this.getInfo}>
+              Search
+            </Button>
           </Box>
           <div className='error'>
             {this.state.error}
@@ -145,7 +144,6 @@ class App extends Component
           <Button variant="contained" color="primary" onClick={this.nextPage}>
             Next
           </Button>
-        </Grid>
       </div>
     );
   }
